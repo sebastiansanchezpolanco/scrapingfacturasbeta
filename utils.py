@@ -1,4 +1,5 @@
 import os
+import re
 import pandas as pd
 from openpyxl import load_workbook
 from typing import List, Dict
@@ -83,7 +84,6 @@ def clean_colombian_number(value) -> float:
     text = str(value).strip()
     
     # Remove currency symbols and non-numeric chars (except . , -)
-    import re
     text = re.sub(r'[^\d.,-]', '', text)
     
     if not text:
@@ -118,7 +118,6 @@ def format_date_colombian(value) -> str:
     text = str(value).strip()
     
     # Basic ISO parsing (YYYY-MM-DD) which is common in XML
-    import re
     iso_match = re.match(r'(\d{4})[-/](\d{2})[-/](\d{2})', text)
     if iso_match:
         y, m, d = iso_match.groups()
@@ -201,20 +200,57 @@ def calculate_nit_verification_digit(nit_number: str) -> str:
         
     return str(v)
 
+def correct_suspicious_low_total(value, threshold: float = 500.0):
+    """
+    Heuristic: values below threshold (e.g. 500 COP) are often decimal errors (missing *1000).
+    Returns corrected value if 0 < value < threshold, else returns value unchanged.
+    """
+    if value is None or not isinstance(value, (int, float)):
+        return value
+    try:
+        v = float(value)
+        if 0 < v < threshold:
+            return v * 1000
+    except (TypeError, ValueError):
+        pass
+    return value
+
+
+def deduplicate_invoice_rows(df: pd.DataFrame, key_column: str = "archivo") -> pd.DataFrame:
+    """
+    Removes duplicate rows by key_column (e.g. archivo), keeping the row with the most non-null values.
+    """
+    if df.empty or key_column not in df.columns:
+        return df
+    df = df.copy()
+    df["_completeness"] = df.notna().sum(axis=1)
+    df = df.sort_values(by=[key_column, "_completeness"], ascending=[True, False])
+    df = df.drop_duplicates(subset=[key_column], keep="first")
+    return df.drop(columns=["_completeness"])
+
+
 def normalize_data(data: Dict) -> Dict:
     """
     Applies Colombian formatting rules to invoice data.
     """
     if not data:
         return {}
-        
+
+    # Ensure fecha is set from fecha_emision when missing (e.g. from XML)
+    if not data.get("fecha") and data.get("fecha_emision"):
+        data["fecha"] = data["fecha_emision"]
+
     # numeric fields
-    for field in ['base', 'impuestos', 'total']:
+    for field in ["base", "impuestos", "total"]:
         if field in data:
             data[field] = clean_colombian_number(data[field])
-            
+
+    # Heuristic: correct suspiciously low total (decimal error)
+    if "total" in data and data["total"] is not None:
+        data["total"] = correct_suspicious_low_total(data["total"])
+
     # date fields
-    for field in ['fecha', 'fecha_vencimiento', 'fecha_emision']:
+    for field in ["fecha", "fecha_vencimiento", "fecha_emision"]:
         if field in data:
             data[field] = format_date_colombian(data[field])
 
