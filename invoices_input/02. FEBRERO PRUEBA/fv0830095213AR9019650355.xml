@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AttachedDocument xmlns="urn:oasis:names:specification:ubl:schema:xsd:AttachedDocument-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-f49f0ad6-3842-4fc8-af74-eb9f85eaf3b6"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="xmldsig-f49f0ad6-3842-4fc8-af74-eb9f85eaf3b6-ref0" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>77v6P06oKjRwzV+T2epoGNjZfFVatKRTqKWh7BPleMA=</ds:DigestValue></ds:Reference><ds:Reference URI="#xmldsig-da2c1d8a-ce09-4ca1-95e5-85ace02cf226-keyinfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>ajnxwTnVQtDLCjSHWAIJqVXfYi1wih8Cdf6YyhFP+ng=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-f49f0ad6-3842-4fc8-af74-eb9f85eaf3b6-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>ren9VDM8ean9y4FHZhF0JaKQtGL6huP+iHHSJgqR/tQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="xmldsig-f49f0ad6-3842-4fc8-af74-eb9f85eaf3b6-sigvalue">dxztUHgEINFOT7lTJgTc5jwoxPzu8eYke8ol0roXFwQCHGckqqIhfmjIYngtv1P+UakyUN0/Bq/iFEa+6lXRKgvtS9nD3M3cfVw/s7Um5Gmu4UsoXoq7dLNEv8kCnXZkEj8u8Eugp9lAGP46N4sKzlL2jikIa9l98jcvgOh3AmotlFaU/anXRjesC4DWlsJB+0ySwIGUG+a9Oyl9iMg29avoCg5+/NrAMF7EQ/mMxC3lkzrzESYx0Qsi/ZyQ8u1M/INbby9YX885EUCzUOJ1bOSHDXshcTvqXPhE8HAMMQrUI+kAuM5GqUQznyLgBZWJL3mYpGA0svT+aYfdRiJ4xQ==</ds:SignatureValue><ds:KeyInfo Id="xmldsig-da2c1d8a-ce09-4ca1-95e5-85ace02cf226-keyinfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-f49f0ad6-3842-4fc8-af74-eb9f85eaf3b6"><xades:SignedProperties Id="xmldsig-f49f0ad6-3842-4fc8-af74-eb9f85eaf3b6-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2026-02-13T16:28:52.056-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>D8IkNIl1rfR5b7nRRGkxcSzgkfruEw4OwbG56cGiyIQ=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName><ds:X509SerialNumber>3301651015829079143</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia.</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>Documentos adjuntos</cbc:CustomizationID>
+  <cbc:ProfileID>Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>AR9019650355</cbc:ID>
+  <cbc:IssueDate>2026-02-13</cbc:IssueDate>
+  <cbc:IssueTime>16:29:52-05:00</cbc:IssueTime>
+  <cbc:DocumentType>Contenedor de Factura Electrónica</cbc:DocumentType>
+  <cbc:ParentDocumentID>AR9019650355</cbc:ParentDocumentID>
+  <cac:SenderParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>ORGANIZACIÓN TERPEL S.A.</cbc:RegistrationName>
+      <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="0" schemeName="31">830095213</cbc:CompanyID>
+      <cbc:TaxLevelCode>O-13;O-23;O-15</cbc:TaxLevelCode>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:SenderParty>
+  <cac:ReceiverParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>PISCIFACTORIA REMAR SAS</cbc:RegistrationName>
+      <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="2" schemeName="31">890706999</cbc:CompanyID>
+      <cbc:TaxLevelCode>R-99-PN;O-23</cbc:TaxLevelCode>
+      <cac:TaxScheme>
+        <cbc:ID>ZZ</cbc:ID>
+        <cbc:Name>No aplica</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:ReceiverParty>
+  <cac:Attachment>
+    <cac:ExternalReference>
+      <cbc:MimeCode>text/xml</cbc:MimeCode>
+      <cbc:EncodingCode>UTF-8</cbc:EncodingCode>
+      <cbc:Description><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <CustomTagGeneral>
+          <Interoperabilidad>
+            <InteroperabilidadPT>
+              <URLDescargaAdjuntos>
+                <URL>https://co.edocnube.com/descarga/adjuntos.aspx?uuid=00ce0074bfc68b24e907354a10bf0eed55f2b02a3485c6190a332cc73c5d453ba778e810292b6070467b2a9abcda74bd&amp;nit=830095213&amp;fec=20260213&amp;num=AR9019650355&amp;tip=1</URL>
+              </URLDescargaAdjuntos>
+            </InteroperabilidadPT>
+          </Interoperabilidad>
+        </CustomTagGeneral>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <AdditionalDocumentInformation>
+          <Info name="TRM">1.00</Info>
+          <Info name="PAGOTOTAL">(415)7704790000082(8020)008907069992109019650355(3900)0011827257</Info>
+          <Info name="VALORTOTAL">11827256.91</Info>
+          <Info name="REFERENCIA1">890706999219019650355</Info>
+          <Info name="PUESTO_EXPEDICION">GERENCIAMIENTO SUR CL 100 No 10 - 99 NEIVA</Info>
+          <Info name="PEDIDO">107523502</Info>
+          <Info name="CONDICIONPAGO">PAGO 8 DIAS NETO</Info>
+          <Info name="AGRUPACION">X</Info>
+          <Info name="R1">Redondear</Info>
+          <Info name="Prefijo">AR</Info>
+        </AdditionalDocumentInformation>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceControl>
+            <sts:InvoiceAuthorization>18764103894427</sts:InvoiceAuthorization>
+            <sts:AuthorizationPeriod>
+              <cbc:StartDate>2025-12-29</cbc:StartDate>
+              <cbc:EndDate>2027-12-29</cbc:EndDate>
+            </sts:AuthorizationPeriod>
+            <sts:AuthorizedInvoices>
+              <sts:Prefix>AR</sts:Prefix>
+              <sts:From>9019628482</sts:From>
+              <sts:To>9020028482</sts:To>
+            </sts:AuthorizedInvoices>
+          </sts:InvoiceControl>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeID="8" schemeName="31" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeAgencyID="195">901014886</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeAgencyID="195">63567894-5b42-4498-a5f7-a7d60451f24d</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeAgencyID="195">6e1d465a074bf7541d112c7ecf4832add659322d7430ddf5976c904299a06b9af24f8b8212416bc4a72be72afd3541c9</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+          <sts:QRCode>https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=00ce0074bfc68b24e907354a10bf0eed55f2b02a3485c6190a332cc73c5d453ba778e810292b6070467b2a9abcda74bd</sts:QRCode>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-5f2f5747-9501-43cf-b8e7-05cc8a3280cb"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="xmldsig-5f2f5747-9501-43cf-b8e7-05cc8a3280cb-ref0" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>Uu3V38i7lycM3DO8BoMGYPOylKuwEEPEesOiWNLiNJE=</ds:DigestValue></ds:Reference><ds:Reference URI="#xmldsig-dc558fff-f188-42cd-8f10-2060fb8259c0-keyinfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>VhFplwk5SZoS3qMVza53hdaWy5tQ7IA2icnlHBMgbDE=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-5f2f5747-9501-43cf-b8e7-05cc8a3280cb-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>iYH/LnuVcFkro238EgTpFknj6U2gKogFZLrnD57XXKQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="xmldsig-5f2f5747-9501-43cf-b8e7-05cc8a3280cb-sigvalue">NvKVbHc0R1TKDpRJ42pVRUz0I2dKTPxgSTt+ZYEQddliMnMzODIgxVSaCl3RiSwwzSXgTA+nSaZlli6ixA6dDahtbubwsVWjKvTBVMyPd89wNO6yoJ9NDsz85IlikxV1p0Al046DQptNB/gQ3YTJ0YWYEDbKo3L1J9nNQYfb7fSbFwt2afr6wbJPym72pCoitj94WfjUUh01AHVBQ2tx9HazY9PHPmsb0P9s1Ox04T8Fmah8RURA7KaY06PPH+XEHLiKpO795+8BkQcocYzksQBIWENimOO3qHwN6QcjgWgwLoyC+eFSAmtyqI62xq3rescLGfFYiZ4yxcQRB4Y8UA==</ds:SignatureValue><ds:KeyInfo Id="xmldsig-dc558fff-f188-42cd-8f10-2060fb8259c0-keyinfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-5f2f5747-9501-43cf-b8e7-05cc8a3280cb"><xades:SignedProperties Id="xmldsig-5f2f5747-9501-43cf-b8e7-05cc8a3280cb-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2026-02-13T16:28:51.415-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>D8IkNIl1rfR5b7nRRGkxcSzgkfruEw4OwbG56cGiyIQ=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName><ds:X509SerialNumber>3301651015829079143</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia.</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>10</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>AR9019650355</cbc:ID>
+  <cbc:UUID schemeID="1" schemeName="CUFE-SHA384">00ce0074bfc68b24e907354a10bf0eed55f2b02a3485c6190a332cc73c5d453ba778e810292b6070467b2a9abcda74bd</cbc:UUID>
+  <cbc:IssueDate>2026-02-13</cbc:IssueDate>
+  <cbc:IssueTime>16:29:43-05:00</cbc:IssueTime>
+  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+  <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+  <cbc:LineCountNumeric>28</cbc:LineCountNumeric>
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>AR9019650355</cbc:ID>
+    <cbc:IssueDate>2026-02-21</cbc:IssueDate>
+    <cbc:DocumentTypeCode>01</cbc:DocumentTypeCode>
+  </cac:AdditionalDocumentReference>
+  <cac:AccountingSupplierParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>ORGANIZACIÓN TERPEL S.A.</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>BOGOTÁ D.C.</cbc:CityName>
+          <cbc:CountrySubentity>BOGOTÁ D.C.</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>KR 7  75 - 51 Piso 13</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>ORGANIZACIÓN TERPEL S.A.</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="0" schemeName="31">830095213</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">O-13;O-23;O-15</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>BOGOTÁ D.C.</cbc:CityName>
+          <cbc:CountrySubentity>BOGOTÁ D.C.</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>KR 7  75 - 51 Piso 13</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>ORGANIZACIÓN TERPEL S.A.</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="0" schemeName="31">830095213</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>AR</cbc:ID>
+          <cbc:Name>011432</cbc:Name>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:ElectronicMail>facturaciont@terpel.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeName="31" schemeID="2">890706999</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name>PISCIFACTORIA REMAR SAS</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>BOGOTÁ D.C.</cbc:CityName>
+          <cbc:PostalZone>111411</cbc:PostalZone>
+          <cbc:CountrySubentity>BOGOTÁ</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CL 22 A 22 72</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>PISCIFACTORIA REMAR SAS</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="2" schemeName="31">890706999</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">R-99-PN;O-23</cbc:TaxLevelCode>
+        <cac:TaxScheme>
+          <cbc:ID>ZZ</cbc:ID>
+          <cbc:Name>No aplica</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>PISCIFACTORIA REMAR SAS</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="2" schemeName="31">890706999</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:Name>022818</cbc:Name>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Telephone>16057523</cbc:Telephone>
+        <cbc:ElectronicMail>radicacionfacturas@piscifactoriaremar.com.co</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:Delivery>
+    <cbc:ActualDeliveryDate>2026-02-13</cbc:ActualDeliveryDate>
+    <cbc:ActualDeliveryTime>16:29:43-05:00</cbc:ActualDeliveryTime>
+    <cac:DeliveryAddress>
+      <cbc:ID>11001</cbc:ID>
+      <cbc:CityName>BOGOTÁ D.C.</cbc:CityName>
+      <cbc:CountrySubentity>BOGOTÁ</cbc:CountrySubentity>
+      <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+      <cac:AddressLine>
+        <cbc:Line>CL 22 A 22 72</cbc:Line>
+      </cac:AddressLine>
+      <cac:Country>
+        <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+        <cbc:Name languageID="es">Colombia</cbc:Name>
+      </cac:Country>
+    </cac:DeliveryAddress>
+  </cac:Delivery>
+  <cac:PaymentMeans>
+    <cbc:ID>2</cbc:ID>
+    <cbc:PaymentMeansCode>47</cbc:PaymentMeansCode>
+    <cbc:PaymentDueDate>2026-02-21</cbc:PaymentDueDate>
+  </cac:PaymentMeans>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="COP">11827256.910000</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="COP">0.000000</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="COP">11827256.910000</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="COP">0.000000</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="COP">0.000000</cbc:ChargeTotalAmount>
+    <cbc:PrepaidAmount currencyID="COP">0.000000</cbc:PrepaidAmount>
+    <cbc:PayableAmount currencyID="COP">11827256.910000</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">42.741000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">472715.460000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11060.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">42.741000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">20.997000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">225507.780000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10740.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">20.997000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">3</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">14.675000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">163186.000000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11120.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">14.675000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">4</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">14.105000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">152855.890000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10837.000355</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">14.105000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">5</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">47.921000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">497899.190000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10390.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">47.921000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">6</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">51.785000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">595009.650000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11490.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">51.785000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">7</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">98.473000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">1057600.020000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10740.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">98.473000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">8</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">11.680000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">123107.200000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10540.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">11.680000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">9</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">11.287000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">119416.460000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10580.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">11.287000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">10</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">80.803000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">888752.200000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10999.000037</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">80.803000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">11</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">52.506000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">609069.600000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11600.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">52.506000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">12</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">36.288000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">402760.510000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11098.999945</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">36.288000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">13</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">8.889000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">100001.250000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11250.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">8.889000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">14</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">10.262000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">113897.940000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11099.000195</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">10.262000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">15</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">154.378000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">1679632.640000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10880.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">154.378000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">16</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">9.811000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">105272.030000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10730.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">9.811000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">17</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">33.499000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">346044.670000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10330.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">33.499000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">18</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">9.666000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">105746.040000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10940.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">9.666000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">19</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">66.707000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">743115.980000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11140.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">66.707000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">20</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">39.245000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">416389.450000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10610.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">39.245000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">21</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">30.694000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">327167.350000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10659.000130</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">30.694000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">22</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">14.019000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">156522.140000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11165.000357</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">14.019000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">23</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">14.257000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">152122.190000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10670.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">14.257000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">24</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">81.198000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">863134.740000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10630.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">81.198000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">25</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">55.858000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">647394.220000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11590.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">55.858000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">26</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">13.369000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">148997.510000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11145.000374</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">13.369000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">27</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">26.340000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">289213.200000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">10980.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">26.340000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID schemeID="0">28</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="GLL">28.585000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">324725.600000</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>BIOACEM B10 N.I.</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>3156</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="001" schemeName="UNSPSC" schemeAgencyID="10">15101801</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">11360.000000</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="GLL">28.585000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>]]></cbc:Description>
+    </cac:ExternalReference>
+  </cac:Attachment>
+  <cac:ParentDocumentLineReference>
+    <cbc:LineID>1</cbc:LineID>
+    <cac:DocumentReference>
+      <cbc:ID>AR9019650355</cbc:ID>
+      <cbc:UUID schemeName="CUFE-SHA384">00ce0074bfc68b24e907354a10bf0eed55f2b02a3485c6190a332cc73c5d453ba778e810292b6070467b2a9abcda74bd</cbc:UUID>
+      <cbc:IssueDate>2026-02-13</cbc:IssueDate>
+      <cbc:DocumentType>ApplicationResponse</cbc:DocumentType>
+      <cac:Attachment>
+        <cac:ExternalReference>
+          <cbc:MimeCode>text/xml</cbc:MimeCode>
+          <cbc:EncodingCode>UTF-8</cbc:EncodingCode>
+          <cbc:Description><![CDATA[<?xml version="1.0" encoding="utf-8" standalone="no"?><ApplicationResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">...</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">...</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="Reference-733227bf-03ac-460c-818c-adb1ebbd1e28" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>P20VilaG5k42PJeQQdUTIR0jxBk6cN2yqkkp6L2Wkv4=</ds:DigestValue></ds:Reference><ds:Reference Id="ReferenceKeyInfo" URI="#Signature-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b-KeyInfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>JMmOJeVMAnAzOqGmhv/MQpyiyFPeJD6dHkaB78t+SkE=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-Signature-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>K7x7yggsKOzo37yPu3sUtx8dD5uOqCSG+XGqsszaY1k=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b">L5tEeFGhtgj1NKgMBjwNje1W6j95lptB+ymVMBJhcfrwqh2xvWncrBcxmYo7Yeg3sAEqSi97wfN4RUEsdAJjZcQGGLgpNQ+i4Sw4J6UG2qIevH7XZ1Ho9sNmn432OZJ/UkvPOqkVR435ba+k53Z69nrNWm+F6ANdTjPFyCoge3i2dLFRlJ6MgvKSTZ54hp7Nse3Ehopjl13DwebV8AE8GKl83S+GwJRKDGAvOlvPCfb+N+l4ZEkqOuA0KJ1SDBICsvOe1ylSRBu4uIrNqcUmLSEmv/UAe1nSDHW5NvU+iw1ULnl32zIl75taz2zJRQT/KKPOv/3w+C2o9lfZuuFH0g==</ds:SignatureValue><ds:KeyInfo Id="Signature-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b-KeyInfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data><ds:KeyValue><ds:RSAKeyValue><ds:Modulus>mHDB0j0kiTFPi1kD6jcJ/Ypwcl4m3Qg0i+s1IB9atBk89Dj0o0QHMhTNqBpVLIjp+5Szvs6glnVDAXQzeajaLKgyb1KnAaz7DvF6coN4i1VvBRSFnoI2cs8BgOdxcU/aOLQTrDUgML405AXIMLuTIqSStq5OVD/BvPZU/5sD1co4s5evZShNRv0xVLkKpR7+ACqpdbfvrIVdq8ljY7Do/OmWDSz2duJ3JXeXrSMpPJ2ITI/acOGsjs+MV5Po0p71OsQCB/b4Mpkt7d5CX8XKeyZywRkk/93hWDcBaGkn0X8dqrgYJTBdfsBHXjC+ZjOmD5w+sRzsq+6eRVAKNcpBJQ==</ds:Modulus><ds:Exponent>AQAB</ds:Exponent></ds:RSAKeyValue></ds:KeyValue></ds:KeyInfo><ds:Object Id="XadesObjectId-c6167672-d1d9-425e-bf09-370f98062474"><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Id="QualifyingProperties-7167d67c-9a63-4869-a313-e64a27f119ff" Target="#Signature-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b"><xades:SignedProperties Id="xmldsig-Signature-4bc3d8c1-5f6e-4bb6-9475-ea56d893806b-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2026-02-13T16:29:51+00:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>/Kv9kFH+mV9JU3HrYscYDkvN9Ovhdd47L3sm5RsgcUk=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=OlimpiaIT ECD Sub, O=OlimpiaIT, OU=OlimpiaIT ECD, E=servicioalcliente@olimpiait.com, C=CO, S=Bogotá D.C., L=Bogotá D.C., STREET=See current address at https://micertificado.olimpiait.com, OID.2.5.4.45=900032774-4, SERIALNUMBER=900032774-4</ds:X509IssuerName><ds:X509SerialNumber>89407279672106850539243115121212403761</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description /></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#Reference-733227bf-03ac-460c-818c-adb1ebbd1e28"><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>1</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>87345851</cbc:ID>
+  <cbc:UUID schemeName="CUDE-SHA384">91b09fa78e30eaf8686980c92860dcc9f1ffe9b2af972aaca73f0d90ce5eeae351e9e1a2bd9be9d1b4f2eb7ab049eb5e</cbc:UUID>
+  <cbc:IssueDate>2026-02-13</cbc:IssueDate>
+  <cbc:IssueTime>16:29:51-05:00</cbc:IssueTime>
+  <cac:SenderParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>Unidad Especial Dirección de Impuestos y Aduanas Nacionales</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="4" schemeName="31">800197268</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:SenderParty>
+  <cac:ReceiverParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>ORGANIZACIÓN TERPEL S.A.</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="0" schemeName="31">830095213</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:ReceiverParty>
+  <cac:DocumentResponse>
+    <cac:Response>
+      <cbc:ResponseCode>02</cbc:ResponseCode>
+      <cbc:Description>Documento validado por la DIAN</cbc:Description>
+    </cac:Response>
+    <cac:DocumentReference>
+      <cbc:ID>AR9019650355</cbc:ID>
+      <cbc:UUID schemeName="CUFE-SHA384">00ce0074bfc68b24e907354a10bf0eed55f2b02a3485c6190a332cc73c5d453ba778e810292b6070467b2a9abcda74bd</cbc:UUID>
+    </cac:DocumentReference>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>1</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>0000</cbc:ResponseCode>
+        <cbc:Description>0</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>2</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>FAM06</cbc:ResponseCode>
+        <cbc:Description>El nombre no corresponde a un valor válido de la lista</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>3</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>FAM07</cbc:ResponseCode>
+        <cbc:Description>El nombre no corresponde a un valor válido de la lista</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>4</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>FAJ43b</cbc:ResponseCode>
+        <cbc:Description>Nombre informado No corresponde al registrado en el RUT con respecto al Nit suminstrado.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>5</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>RUT01</cbc:ResponseCode>
+        <cbc:Description>La validación del estado del RUT próximamente estará disponible.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>6</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>RUT01</cbc:ResponseCode>
+        <cbc:Description>La validación del estado del RUT próximamente estará disponible.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+  </cac:DocumentResponse>
+</ApplicationResponse>]]></cbc:Description>
+        </cac:ExternalReference>
+      </cac:Attachment>
+      <cac:ResultOfVerification>
+        <cbc:ValidatorID>Unidad Especial Dirección de Impuestos y Aduanas Nacionales</cbc:ValidatorID>
+        <cbc:ValidationResultCode>02</cbc:ValidationResultCode>
+        <cbc:ValidationDate>2026-02-13</cbc:ValidationDate>
+        <cbc:ValidationTime>16:29:51-05:00</cbc:ValidationTime>
+      </cac:ResultOfVerification>
+    </cac:DocumentReference>
+  </cac:ParentDocumentLineReference>
+</AttachedDocument>

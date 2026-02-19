@@ -1,0 +1,41 @@
+REPORTE DE FACTURAS FALLIDAS
+============================
+
+ERROR: INVALID_ARGUMENT (Total: 16)
+Posibles causas: Archivo corrupto, contraseña, formato no soportado, o nombre de archivo problemático.
+--------------------------------------------------------------------------------
+- DSP5816 JORGE  M CUADRADO 2340 -Camilo Rivera.pdf
+- DSP5778 JUAN F CASTIBLANCO -JAVIER JIMENEZ.pdf
+- DSP5785 GRISELA E RAMOS - JAVIER JIMENEZ.pdf
+- DIANA L CHAMORRO-HAROLD LASSO.pdf
+- DSP5795 ANA H AYA -Ricardo Miranda.pdf
+- JORGE M CUADRADO - CAMILO RIVERA  2414.pdf
+- DSP5776 ANA L SERRANO -JAVIER JIMENEZ.pdf
+- HENRY H BEDOYA  - HAROLD LASSO.pdf
+- ENITH Y TRIANA -CAMILO RIVERA.pdf
+- OSCAR JIMENEZ - CAMILO RIVERA-1781.pdf
+- DEISY R MEDINACAJA MENOR BOGOTA.pdf
+- TRACTO PARKING -CAMILO RIVERA.pdf
+- FEP1137009.pdf
+- DSP5766 KEVIN A CORTES -Javier Jimenez.pdf
+- DSP5812 LUIS A GUASCA -GEU331.pdf
+- DSP5765 LUIS E GOMEZ 33090 -Javier Jimenez.pdf
+
+OTROS ERRORES (Total: 6)
+--------------------------------------------------------------------------------
+- CIRCULARIZACIÓN CLIENTES 2025 CANASTIBAS SAS.pdf
+  Error: 'ascii' codec can't encode character '\u0301' in position 14: ordinal not in range(128)
+- DSP5811 SAUL J BRICEÑO M GEU331.pdf
+  Error: 'ascii' codec can't encode character '\u0303' in position 21: ordinal not in range(128)
+- ad09000525800172600000122.pdf
+  Error: Expecting property name enclosed in double quotes: line 14 column 16 (char 471)
+- ORLANDO ESPAÑA - CAMILO RIVERO .pdf
+  Error: 'ascii' codec can't encode character '\u0303' in position 13: ordinal not in range(128)
+- DSP5810 SAUL J BRICEÑO GEU331.pdf
+  Error: 'ascii' codec can't encode character '\u0303' in position 21: ordinal not in range(128)
+- fv0811009788000202611874752.pdf
+  Error: Expecting property name enclosed in double quotes: line 15 column 22 (char 491)
+
+
+============================
+Total fallidos: 22
