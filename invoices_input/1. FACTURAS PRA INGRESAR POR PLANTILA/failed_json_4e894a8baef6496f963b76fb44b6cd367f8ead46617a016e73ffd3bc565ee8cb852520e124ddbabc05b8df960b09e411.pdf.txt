@@ -1,0 +1,18 @@
+[
+  {
+    "proveedor_nombre": "AGROFERRETERIA AGUAZUL SAS",
+    "proveedor_nit": "901684330",
+    "proveedor_direccion": "Calle 1 No 2-16",
+    "proveedor_telefono": "608|3212076047|",
+    "proveedor_ciudad": "Palestina",
+    "factura_numero": "FEAA-923",
+    "fecha_emision": "2026-02-19",
+    "fecha_vencimiento": "2026-02-19",
+    "descripcion_general": null,
+    "moneda": "COP",
+    "base_imponible": 34500.00,
+    "impuestos": 6.555,00,
+    "total": 41055.00,
+    "cufe": "4e894a8baef6496f963b76fb44b6cd367f8ead46617a016e73ffd3bc565ee8cb852520e124ddbabc05b8df960b09e411"
+  }
+]
