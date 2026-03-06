@@ -146,8 +146,8 @@ def clean_nit(value) -> str:
     # Ensure string
     text = str(value).strip()
     
-    # Remove dots and spaces
-    text = text.replace(".", "").replace(" ", "")
+    # Remove dots, spaces and comas
+    text = text.replace(".", "").replace(" ", "").replace(",", "")
     
     return text
 
